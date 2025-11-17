@@ -1,0 +1,195 @@
+/* ======================================================
+   BLUE LUXURY + SIDEBAR + GLASS TOPBAR
+   ====================================================== */
+
+.dash-body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    display: flex;
+
+    /* Luxury Gradient */
+    background: linear-gradient(135deg, #001d3d, #00b4d8);
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 230px;
+    padding: 25px 20px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(14px);
+    border-right: 2px solid rgba(255,255,255,0.20);
+}
+
+.logo {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.side-link {
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.side-link:hover,
+.side-link.active {
+    background: rgba(255,255,255,0.22);
+    box-shadow: 0 0 12px rgba(255,255,255,0.3);
+}
+
+/* ================= MAIN CONTENT ================= */
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+/* ================= TOP-BAR (Glassmorphism) ================= */
+.topbar-glass {
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+
+    padding: 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    margin-bottom: 25px;
+}
+
+.topbar-glass input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    width: 280px;
+    outline: none;
+
+    background: rgba(255,255,255,0.25);
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+/* ================= TOP ACTIONS ================= */
+.top-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.logout-btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    font-weight: bold;
+}
+
+/* ================= GLASS BUTTONS ================= */
+.create-glass-btn {
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ================= CARDS ================= */
+.glass-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.glass-card {
+    flex: 1;
+    padding: 26px;
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.20);
+    backdrop-filter: blur(14px);
+
+    text-align: center;
+    font-size: 22px;
+
+    box-shadow: 0 4px 25px rgba(0,0,0,0.20);
+}
+
+/* ================= TABLE ================= */
+.table-container {
+    backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.18);
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.glass-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.glass-table th {
+    background: rgba(0,0,0,0.35);
+    padding: 12px;
+}
+
+.glass-table td {
+    padding: 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.glass-table tr:nth-child(even) {
+    background: rgba(255,255,255,0.12);
+}
+
+.glass-table tr:nth-child(odd) {
+    background: rgba(255,255,255,0.07);
+}
+
+.glass-table td:last-child {
+    background: rgba(255,255,255,0.18);
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    font-weight: 600;
+}
+
+/* Update (blue-cyan) */
+.update-btn {
+    background: linear-gradient(135deg, #00b4d8, #48cae4);
+}
+
+/* Delete (red) */
+.delete-btn {
+    background: linear-gradient(135deg, #ff1744, #ff5252);
+}
+
+/* Attendance */
+.present { background: #00c853; }
+.absent  { background: #ff5252; }
+.leave   { background: #ffc107; color: black; }

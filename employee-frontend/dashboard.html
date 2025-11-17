@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dash-body">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2 class="logo">⚜️ HR PANEL</h2>
+
+    <a class="side-link active" href="dashboard.html">🏠 Dashboard</a>
+    <a class="side-link" href="attendance.html">📅 Attendance</a>
+    <a class="side-link" href="create.html">➕ Add Employee</a>
+</div>
+
+<!-- MAIN WRAPPER -->
+<div class="main">
+
+    <!-- GLASS TOP BAR -->
+    <div class="topbar-glass">
+        
+        <!-- Search -->
+        <input type="text" id="search" placeholder="Search..." onkeyup="searchEmployee()">
+
+        <div class="top-actions">
+            <button class="create-glass-btn" onclick="toggleTheme()">🌓 Theme</button>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="glass-cards">
+        <div class="glass-card" id="cardTotal"></div>
+        <div class="glass-card" id="cardDept"></div>
+        <div class="glass-card" id="cardOnline"></div>
+        <div class="glass-card" id="cardPresent"></div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-container">
+        <table id="employeeTable" class="glass-table"></table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", loadEmployees);
+</script>
+
+</body>
+</html>

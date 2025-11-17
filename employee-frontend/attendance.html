@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-body">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2 class="logo">⚜ HR PANEL</h2>
+
+    <a class="side-link" href="dashboard.html">🏠 Dashboard</a>
+    <a class="side-link active" href="attendance.html">📅 Attendance</a>
+    <a class="side-link" href="create.html">➕ Add Employee</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <!-- GLASS TOP BAR -->
+    <div class="topbar-glass">
+
+        <!-- date selector -->
+        <input type="date" id="attDate">
+
+        <div class="top-actions">
+            <button class="create-glass-btn" onclick="downloadAttendanceCSV()">⬇ CSV</button>
+            <button class="create-glass-btn" onclick="downloadAttendancePDF()">📄 PDF</button>
+        </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-container">
+        <table id="attendanceTable" class="glass-table"></table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+</html>
